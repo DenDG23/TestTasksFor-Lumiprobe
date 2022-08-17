@@ -1,9 +1,7 @@
 #Напишите функцию, которая принимает на вход строку, состояющую из символов '(' и ')', задающих скобочную последовательность, и возвращает True, если последовательность корректна, иначе False.
-str = str(input('Введите строку '))
-
-def trueOrFalse(str):
+def trueOrFalse(s: str) -> bool:
     counter = 0
-    for i in str:
+    for i in s:
         if i == '(':
             counter += 1
         elif i == ')':
@@ -12,4 +10,4 @@ def trueOrFalse(str):
             return False   
     return True
    
-print(trueOrFalse(str))
+print(trueOrFalse(s))
